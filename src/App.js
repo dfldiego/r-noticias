@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Formulario from './components/Formulario';
 
 function App() {
+
+  // definir la categoria y noticias
+  const [categoria, setCategoria] = useState('');
+
   return (
     <>
       <Header
@@ -10,7 +14,9 @@ function App() {
       />
 
       <div className="container white">
-        <Formulario />
+        <Formulario
+          setCategoria={setCategoria}
+        />
       </div>
     </>
   );
