@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Formulario from './components/Formulario';
+import ListadoNoticia from './components/ListadoNoticia';
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
       <div className="container white">
         <Formulario
           setCategoria={setCategoria}
+        />
+        <ListadoNoticia
+          noticias={noticias}
         />
       </div>
     </>
