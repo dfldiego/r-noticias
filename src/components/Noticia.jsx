@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css';
 
 const Noticia = ({ noticia }) => {
 
@@ -19,7 +20,7 @@ const Noticia = ({ noticia }) => {
             <div className="card">
                 {imagen}
                 <div className="card-content">
-                    <h3>{title}</h3>
+                    <h3 className="texto">{title}</h3>
                     <p>{description}</p>
                 </div>
                 <div className="card-action">
